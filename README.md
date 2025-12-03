@@ -6,7 +6,7 @@ I'll explain the code step by step, breaking it down by sections: imports, icons
 <br />
 <code>import React, { useState, useEffect } from 'react';</code>
 <br />
-<ul>
+<ul style="margin-top:10px">
   <li>React: The core library for building UI components.</li>
   <li>useState: Hook for managing local state (e.g., selected period, loading state, counters).</li>
   <li>useEffect: Hook for handling side effects (e.g., animations, simulating data loading).</li>
