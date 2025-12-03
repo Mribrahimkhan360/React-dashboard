@@ -4,3 +4,4 @@ I'll explain the code step by step, breaking it down by sections: imports, icons
 <br />
 <h2>Step 1: Imports</h2>
 <br />
+<code>import React, { useState, useEffect } from 'react';</code>
