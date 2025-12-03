@@ -52,3 +52,12 @@ Purpose: Provides reusable, lightweight icons without dependencies.
   return <span className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{count.toLocaleString()}{suffix}</span>;
 };
 </code>
+<br>
+<p>
+  Props: value (number to count to), suffix (optional, e.g., 'm' for minutes).
+State: count starts at 0.
+useEffect: Runs on mount and when value changes. Uses setInterval to animate the count incrementally (every ~16ms for smooth 60fps animation) over 2 seconds.
+Cleanup: Clears the interval on unmount to prevent memory leaks.
+Render: Displays the animated number with formatting (e.g., commas via toLocaleString()) and a gradient text style.
+Purpose: Creates an engaging "count-up" effect for stats.
+</p>
