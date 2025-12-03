@@ -23,6 +23,7 @@ I'll explain the code step by step, breaking it down by sections: imports, icons
   Loader2: () => <svg ... />,  // Spinner for loading
 };
 </code>
+<br/>
 <p>  This is an object of simple SVG icons, replacing a library like lucide-react.
 Each icon is a functional component returning an <svg> element with paths, circles, or polylines for shapes.
 Attributes like strokeLinecap, strokeLinejoin, and strokeWidth style the lines.
