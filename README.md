@@ -30,3 +30,25 @@ Attributes like strokeLinecap, strokeLinejoin, and strokeWidth style the lines.
 Classes like w-6 h-6 set size, and animate-spin adds rotation for the loader.
 Purpose: Provides reusable, lightweight icons without dependencies.
 </p>
+<code>
+  const AnimatedCounter = ({ value, suffix = '' }) => {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    // Animation logic: increments from 0 to value over 2 seconds
+    let start = 0;
+    const end = parseInt(value);
+    const duration = 2000;
+    const increment = end / (duration / 16);
+    const timer = setInterval(() => {
+      start += increment;
+      if (start > end) {
+        setCount(end);
+        clearInterval(timer);
+      } else setCount(Math.floor(start));
+    }, 16);
+    return () => clearInterval(timer);
+  }, [value]);
+
+  return <span className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{count.toLocaleString()}{suffix}</span>;
+};
+</code>
