@@ -54,10 +54,10 @@ Purpose: Provides reusable, lightweight icons without dependencies.
 </code>
 <br>
 <p>
-  Props: value (number to count to), suffix (optional, e.g., 'm' for minutes).
-State: count starts at 0.
-useEffect: Runs on mount and when value changes. Uses setInterval to animate the count incrementally (every ~16ms for smooth 60fps animation) over 2 seconds.
-Cleanup: Clears the interval on unmount to prevent memory leaks.
-Render: Displays the animated number with formatting (e.g., commas via toLocaleString()) and a gradient text style.
-Purpose: Creates an engaging "count-up" effect for stats.
+<br /> <string>Props:</string>string> value (number to count to), suffix (optional, e.g., 'm' for minutes).
+<br /> <string>State:</string> count starts at 0.
+<br /> <string>useEffect:</string> Runs on mount and when value changes. Uses setInterval to animate the count incrementally (every ~16ms for smooth 60fps animation) over 2 seconds.
+<br /> <string>Cleanup:</string> Clears the interval on unmount to prevent memory leaks.
+<br /> <string>Render:</string> Displays the animated number with formatting (e.g., commas via toLocaleString()) and a gradient text style.
+<br /> <string>Purpose:</string> Creates an engaging "count-up" effect for stats.
 </p>
