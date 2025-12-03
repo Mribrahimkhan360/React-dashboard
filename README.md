@@ -13,7 +13,6 @@ I'll explain the code step by step, breaking it down by sections: imports, icons
 </ul>
 <h2>Step 2: Icons Object</h2>
 <code>
-
   const Icons = {
   Users: () => <svg ... />,  // Simplified SVG for users icon
   Eye: () => <svg ... />,    // Eye icon for views
