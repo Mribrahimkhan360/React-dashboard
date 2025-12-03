@@ -11,3 +11,16 @@ I'll explain the code step by step, breaking it down by sections: imports, icons
   <li>useState: Hook for managing local state (e.g., selected period, loading state, counters).</li>
   <li>useEffect: Hook for handling side effects (e.g., animations, simulating data loading).</li>
 </ul>
+<h2>Step 2: Icons Object</h2>
+<code>
+
+  const Icons = {
+  Users: () => <svg ... />,  // Simplified SVG for users icon
+  Eye: () => <svg ... />,    // Eye icon for views
+  Globe: () => <svg ... />,  // Globe for geo data
+  Clock: () => <svg ... />,  // Clock for time metrics
+  TrendingUp: () => <svg ... />,  // Up arrow for trends
+  ExternalLink: () => <svg ... />,  // Link icon for exit pages
+  Loader2: () => <svg ... />,  // Spinner for loading
+};
+</code>
